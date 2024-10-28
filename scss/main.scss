@@ -3,6 +3,8 @@ $cd-txt: #15DEA5;
 $cd-box: #fff;
 $cd-danger: #b20a37;
 $ball-size: 10rem;
+$cd-btn-start: rgba(1, 28, 55, 0);
+$cd-btn-end: rgba(1, 28, 55, 1);
 
 body{
     background-color: blueviolet;
@@ -25,10 +27,14 @@ body{
     }
 
     &_2 {
+      background-color: $cd-btn-start;
+      border: 3px solid $cd-btn;
       overflow: hidden;
       position: relative;
+      transition: transform 450ms, background-color 300ms 150ms;
       &:hover {
           transform: scale(1.15);
+          background-color: $cd-btn-end;
       }    
     }
 }
